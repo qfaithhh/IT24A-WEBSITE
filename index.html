@@ -1,0 +1,399 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MÉMOIRE | From Moments to Memories</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="overlay"></div>
+
+        <div class="brand">
+            <h1>MÉmOiRE</h1>
+            <p>From Moments to Memories</p>
+        </div>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav class="nav">
+        <a href="#home" onclick="showPage('home'); return false;">Home</a>
+        <a href="#products" onclick="showPage('products'); return false;">Products</a>
+        <a href="#reviews" onclick="showPage('reviews'); return false;">Reviews</a>
+        <a href="#about" onclick="showPage('about'); return false;">About Us</a>
+    </nav>
+
+    <main>
+
+        <!-- HOME -->
+        <section class="page home-page" id="home">
+
+            <div class="section-heading">
+                <p class="small-title">SPECIAL OFFERS</p>
+                <h2>Special Deals</h2>
+                <p>Make your favorite memories even more special with MÉMOIRE.</p>
+            </div>
+
+            <div class="promo-grid">
+
+                <div class="promo-card">
+                    <span class="discount-badge">10% OFF</span>
+                    <img src="images/magnets.jpg" alt="Photo Magnets">
+                    <h3>First Memories Promo</h3>
+                    <p>Enjoy 10% off your first purchase with MÉMOIRE.</p>
+                    <p class="promo-note">For first-time customers.</p>
+                </div>
+
+                <div class="promo-card">
+                    <span class="discount-badge">FREE MAGNET</span>
+                    <img src="images/pins.jpg" alt="Photo Pins">
+                    <h3>Buy 10, Get 1 FREE!</h3>
+                    <p>Buy 10 photo pins and get 1 FREE photo magnet!</p>
+                    <p class="promo-note">A little extra memory, on us!</p>
+                </div>
+
+            </div>
+
+            <div class="section-heading best-seller-heading">
+                <p class="small-title">OUR FAVORITES</p>
+                <h2>Best Sellers</h2>
+                <p>Our favorite keepsakes for your special memories.</p>
+            </div>
+
+            <div class="best-seller-grid">
+
+                <div class="best-seller-card">
+                    <button class="view-product-btn" type="button"
+                        onclick="showPage('products')">
+                        VIEW PRODUCTS
+                    </button>
+
+                    <div class="best-seller-image">
+                        <img src="images/photos.jpg" alt="Printed Photos">
+                    </div>
+
+                    <div class="best-seller-info">
+                        <h3>Printed Photos</h3>
+                        <p>High-quality prints to keep, display, and treasure your favorite moments.</p>
+                        <span class="best-seller-price">₱8 each</span>
+                    </div>
+                </div>
+
+                <div class="best-seller-card">
+                    <button class="view-product-btn" type="button"
+                        onclick="showPage('products')">
+                        VIEW PRODUCTS
+                    </button>
+
+                    <div class="best-seller-image">
+                        <img src="images/keychains.jpg" alt="Photo Keychains">
+                    </div>
+
+                    <div class="best-seller-info">
+                        <h3>Photo Keychains</h3>
+                        <p>Personalized keychains that let you carry your favorite memories anywhere.</p>
+                        <span class="best-seller-price">₱59 each</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="home-message">
+                <p>Every picture holds a story. Keep yours close with MÉMOIRE.</p>
+                <button type="button" onclick="showPage('products')">
+                    Explore Our Products
+                </button>
+            </div>
+
+        </section>
+
+        <!-- PRODUCTS -->
+        <section class="page products" id="products">
+
+            <div class="section-heading">
+                <p class="small-title">MADE FOR YOUR MEMORIES</p>
+                <h2>Products</h2>
+            </div>
+
+            <div class="product-grid">
+
+                <div class="product-card">
+                    <img src="images/mugs.jpg" alt="Photo Mugs">
+
+                    <div class="product-info">
+                        <h3>Photo Mugs</h3>
+                        <p>Customized mugs featuring your favorite photos and memories.</p>
+
+                        <div class="price-order">
+                            <p class="price">₱119 each</p>
+                            <button class="order-btn" type="button">ORDER NOW</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/keychains.jpg" alt="Photo Keychains">
+
+                    <div class="product-info">
+                        <h3>Photo Keychains</h3>
+                        <p>Personalized keychains that let you carry your favorite memories anywhere.</p>
+
+                        <div class="price-order">
+                            <p class="price">₱59 each</p>
+                            <button class="order-btn" type="button">ORDER NOW</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/pins.jpg" alt="Photo Pins">
+
+                    <div class="product-info">
+                        <h3>Photo Pins</h3>
+                        <p>Customized photo pins to express your style and showcase your favorite pictures.</p>
+
+                        <div class="price-order">
+                            <p class="price">₱49 each</p>
+                            <button class="order-btn" type="button">ORDER NOW</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/photos.jpg" alt="Printed Photos">
+
+                    <div class="product-info">
+                        <h3>Printed Photos</h3>
+                        <p>High-quality prints to keep, display, and treasure your favorite moments.</p>
+
+                        <div class="price-order">
+                            <p class="price">₱8 each</p>
+                            <button class="order-btn" type="button">ORDER NOW</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/frames.jpg" alt="Photo Frames">
+
+                    <div class="product-info">
+                        <h3>Photo Frames</h3>
+                        <p>Beautiful frames to display and preserve your special moments.</p>
+
+                        <div class="price-order">
+                            <p class="price">₱109 each</p>
+                            <button class="order-btn" type="button">ORDER NOW</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/magnets.jpg" alt="Photo Magnets">
+
+                    <div class="product-info">
+                        <h3>Photo Magnets</h3>
+                        <p>Custom photo magnets that add a personal touch to your everyday spaces.</p>
+
+                        <div class="price-order">
+                            <p class="price">₱69 each</p>
+                            <button class="order-btn" type="button">ORDER NOW</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <p class="product-note">Prices are subject to change depending on customization.</p>
+
+        </section>
+
+        <!-- REVIEWS -->
+        <section class="page reviews-page" id="reviews">
+
+            <div class="section-heading">
+                <p class="small-title">YOUR STORIES MATTER</p>
+                <h2>Customer Reviews</h2>
+            </div>
+
+            <div class="review-grid">
+
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>Super cute sa keychain and printed photo!! Perfect kaayo pang-gift. Will order again!</p>
+                    <h3>Saira Mae Fuentes</h3>
+                    <span>Photo Keychains &amp; Printed Photo</span>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>I love my personalized mug! The print looks beautiful, and the quality is amazing.</p>
+                    <h3>Angela Andilan</h3>
+                    <span>Photo Mugs</span>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">★★★★</div>
+                    <p>Ang ganda ng quality ng pictures! Maayos ang pagkaka-print at sulit talaga sha guysss.</p>
+                    <h3>Claire Acodili</h3>
+                    <span>Printed Photos &amp; Photo Keychains</span>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>Bisag affordable ra sya kay high quality jud sya, vv worth etttt.</p>
+                    <h3>Kim Carrie Salazar</h3>
+                    <span>Photo Pins &amp; Photo Frames</span>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">★★★★</div>
+                    <p>Nice kaayo tan-awon!!</p>
+                    <h3>Ryan Jade Aluto</h3>
+                    <span>Printed Photos &amp; Photo Magnet</span>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>Napakaganda ng memories na na-preserve through these prints. Definitely worth ordering!</p>
+                    <h3>Chelcy Sheirra Saberon</h3>
+                    <span>Photo Keychains</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ABOUT US -->
+        <section class="page about-page" id="about">
+
+            <div class="about-content">
+
+                <p class="small-title">THE STORY BEHIND THE NAME</p>
+                <h2>About MÉmOiRE</h2>
+
+                <p>MÉMOIRE is a photo-printing business created to turn meaningful moments into keepsakes you can hold, display, and treasure.</p>
+
+                <p>We offer personalized photo products such as printed photos, photo mugs, keychains, magnets, frames, and pins. Each product gives you a special way to preserve the moments that matter to you.</p>
+
+                <p>We believe that memories are more than just pictures. They are stories, people, and experiences worth remembering. At MÉMOIRE, we help make those memories last a little longer.</p>
+
+                <div class="team-section">
+                    <h2>Meet the Founders</h2>
+
+                    <div class="team-container">
+
+                        <div class="team-card">
+                            <img src="images/FOUNDER.jpg" alt="Founder Chad Rizon">
+                            <h3>Chad Rizon</h3>
+                            <p>Founder</p>
+                        </div>
+
+                        <div class="team-card">
+                            <img src="images/CO-FOUNDER.jpg" alt="Co-Founder Quincy Faith Saberon">
+                            <h3>Quincy Faith Saberon</h3>
+                            <p>Co-Founder</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <h3 class="location-heading">FIND US AT</h3>
+                <p class="location-address">CAMP JMC AGUSAN CANYON</p>
+
+                <div class="location-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11418.56277088855!2d124.82228080481232!3d8.333222146395762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32ff97abfeca0e2b%3A0x58eba51199be5f70!2sAgusan%20Canyon%2C%20Manolo%20Fortich%2C%20Bukidnon!5e1!3m2!1sen!2sph!4v1792189866260!5m2!1sen!2sph"
+                        title="MÉMOIRE location map"
+                        loading="lazy"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+            
+                        <div class="contact-section">
+                     <h2>contact us!</h2>
+                     <p>We'd love to hear from you!</p>
+
+                <form class="contact-form">
+           <input type="text" placeholder="Your Name">
+          <input type="email" placeholder="Your Email">
+          <textarea placeholder="Your Message" rows="4"></textarea>
+        <button type="button">Send Message</button>
+    </form>
+</div>
+
+                <p class="about-tagline">MÉMOIRE — From Moments to Memories.</p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+                <h2>MÉMOIRE</h2>
+                <p>From Moments to Memories.</p>
+                <p>Keeping your favorite memories close, one print at a time.</p>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Get in Touch</h3>
+                <p>Email: mémoire@gmail.com</p>
+                <p>Facebook: MÉMOIRE</p>
+                <p>Instagram: @memoire</p>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            <p>© 2026 MÉMOIRE. All rights reserved.</p>
+        </div>
+
+    </footer>
+
+    <script>
+        function showPage(pageId) {
+            const pages = document.querySelectorAll(".page");
+            const links = document.querySelectorAll(".nav a");
+
+            pages.forEach(function(page) {
+                page.classList.remove("active");
+            });
+
+            document.getElementById(pageId).classList.add("active");
+
+            links.forEach(function(link) {
+                link.classList.remove("active-link");
+            });
+
+            const activeLink = document.querySelector(
+                '.nav a[href="#' + pageId + '"]'
+            );
+
+            if (activeLink) {
+                activeLink.classList.add("active-link");
+            }
+
+            window.scrollTo(0, 0);
+        }
+
+        showPage("home");
+    </script>
+
+</body>
+</html>
